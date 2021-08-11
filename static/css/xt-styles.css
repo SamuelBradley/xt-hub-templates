@@ -1,6 +1,6 @@
 
 .xt h1 {
-  color: #003B71;
+  color: #004B87;
   /* font-family: "Panton Black Caps"; */
   margin-top: 30px;
   margin-bottom: 30px;
@@ -9,7 +9,7 @@
 .xt h2 {
   /* font-family: "Panton Light Caps"; */
   font-size: 2rem;
-  color: #003B71;
+  color: #004B87;
   margin-bottom: 20px;
 }
 
@@ -44,8 +44,14 @@
 
 .btn-jupyter {
     color: #fff;
-    background-color: #E50051 !important;
-    border-color: #E50051 !important;
+    background-color: #00A9CE !important;
+    border-color: #00A9CE !important;
+}
+
+.btn-jupyter:hover {
+    color: #fff;
+    background-color: #004B87 !important;
+    border-color: #004B87 !important;
 }
 
 #login-main .service-login {
