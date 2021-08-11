@@ -5,10 +5,10 @@
     <h1>{{ xt_hub_title or 'Exploration Toolkit EASIHub' }}</h1>
     <h2>{{ xt_hub_subtitle }}</h2>
     <p>
-      {% if pangeo_welcome %}
+      {% if xt_welcome %}
       {{ (xt_welcome | safe) }}
       {% else %}
-      Welcome to Exploration Toolkit's coding environment. For more information about Exploartion Toolkit checkout our ,
+      Welcome to Exploration Toolkit's coding environment. For more information about Exploartion Toolkit checkout our 
       <a href="https://docs.dev.exploration.tools">docs</a>.
       {% endif %}
     </p>
