@@ -1,0 +1,17 @@
+{% extends "templates/login.html" %}
+
+{% block main %}
+<div class="container text-center xt">
+    <h1>{{ xt_hub_title or 'Exploration Toolkit EASIHub' }}</h1>
+    <h2>{{ xt_hub_subtitle }}</h2>
+    <p>
+      {% if pangeo_welcome %}
+      {{ (xt_welcome | safe) }}
+      {% else %}
+      Welcome to Exploration Toolkit's coding environment. For more information about Exploartion Toolkit checkout our ,
+      <a href="https://docs.dev.exploration.tools">docs</a>.
+      {% endif %}
+    </p>
+</div>
+{{ super() }}
+{% endblock %}
