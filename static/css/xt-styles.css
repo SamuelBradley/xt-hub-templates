@@ -20,9 +20,9 @@
 
 
 .navbar.navbar-default {
-  background: -webkit-linear-gradient(left, #5eb130, #003B71); /* Chrome10+, Safari5.1+ */
-  background: linear-gradient(left, #5eb130, #003B71);
-  border: None;
+  background: -webkit-linear-gradient(left, #eee, #004B87); /* Chrome10+, Safari5.1+ */
+  background: linear-gradient(left, #eee, #004B87);
+  border-bottom: solid 1px slategray;
 }
 
 .navbar.navbar-default .navbar-nav>li>a, .navbar.navbar-default .navbar-text {
@@ -30,15 +30,11 @@
 }
 
 .navbar.navbar-default .navbar-nav>li>a:hover, .navbar.navbar-default .navbar-nav>li>a:focus {
-    background-color: #00a3b0;
+    background-color: #00A9CE;
 }
 
 .navbar.navbar-default .navbar-nav>.open>a, .navbar.navbar-default .navbar-nav>.open>a:hover, .navbar.navbar-default .navbar-nav>.open>a:focus  {
-    background-color: #00a3b0;
-}
-
-#login-main .auth-form-header {
-    background: #5EB130 !important;
+    background-color: #00A9CE;
 }
 
 
@@ -54,7 +50,12 @@
     border-color: #004B87 !important;
 }
 
-#login-main .service-login {
+#login-main {
+  
+}
+
+.service-login {
     vertical-align: top !important;
     padding-top: 60px;
+    text-align: center;
 }
