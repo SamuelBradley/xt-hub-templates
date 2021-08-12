@@ -5,10 +5,13 @@
 <link rel="stylesheet" href="{{ static_url("css/style.min.css") }}" type="text/css"/>
 <link rel="stylesheet" href="{{ static_url("custom/css/xt-styles.css") }}" type="text/css"/>
 {% endblock %}
+{% block favicon %}
+  <link rel="icon" href="{{ static_url("custom/favicon.ico") }}" type="image/x-icon">
+{% endblock %}
 
 {# requires jupyerhub > 0.9.4 https://github.com/jupyterhub/jupyterhub/pull/2296 #}
 {% block logo %}
 <span id="jupyterhub-logo" class="pull-left">
-    <a href="{{logo_url or base_url}}"><img src="{{static_url("custom/images/xt-words.png") }}" alt='Exploration Toolkit' class='jpy-logo' title='Home'/></a>
+    <a href="{{logo_url or base_url}}"><img src="{{static_url("custom/images/xt_code_logo.png") }}" alt='Exploration Toolkit' class='jpy-logo' title='Home'/></a>
 </span>
 {% endblock %}

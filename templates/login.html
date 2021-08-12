@@ -1,27 +1,32 @@
 {% extends "templates/login.html" %}
 
 {% block login %}
-<div id="login-main" class="container xt text-center">
-  <h1>{{ xt_hub_title or 'Exploration Toolkit EASIHub' }}</h1>
-  <h2>{{ xt_hub_subtitle }}</h2>
-  <p>
-    {% if xt_welcome %}
-    {{ (xt_welcome | safe) }}
+<div id="login-main" class="container xt">
+  <div class="row">
+    <div class="col-6">
+      <h1>{{ xt_hub_title or 'Exploration Toolkit EASIHub' }}</h1>
+      <h2>{{ xt_hub_subtitle }}</h2>
+      <p>
+        {% if xt_welcome %}
+        {{ (xt_welcome | safe) }}
+        {% else %}
+        Welcome to Exploration Toolkit's coding environment. For more information about Exploartion Toolkit checkout our 
+        <a href="https://docs.dev.exploration.tools">docs</a>.
+        {% endif %}
+      </p>
+    </div>
+    {% block login_container %}
+    {% if login_service %}
+    <div class="service-login col-6">
+      <a role="button" class='btn btn-jupyter btn-lg' href='{{authenticator_login_url}}'>
+        XT User Sign In
+      </a>
+    </div>
     {% else %}
-    Welcome to Exploration Toolkit's coding environment. For more information about Exploartion Toolkit checkout our 
-    <a href="https://docs.dev.exploration.tools">docs</a>.
+      <h3>ERROR: Login has not been configured correctly</h3>
     {% endif %}
-  </p>
+    {% endblock login_container %}
+  </div>
 </div>
-{% block login_container %}
-{% if login_service %}
-<div class="service-login">
-  <a role="button" class='btn btn-jupyter btn-lg' href='{{authenticator_login_url}}'>
-    Sign in with {{login_service}}
-  </a>
-</div>
-{% else %}
-  <h3>ERROR: Login has not been configured correctly</h3>
-{% endif %}
-{% endblock login_container %}
+
 {% endblock login %}
