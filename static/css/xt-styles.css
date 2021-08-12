@@ -20,7 +20,7 @@
 
 
 .navbar.navbar-default {
-  background: #00313C;
+  background: #0093B5;
   border: none;
   border-bottom: solid 1px slategray;
 }
@@ -40,8 +40,8 @@
 
 .btn-jupyter {
     color: #fff;
-    background-color: #00A9CE !important;
-    border-color: #00A9CE !important;
+    background-color: #0093B5 !important;
+    border-color: #0093B5 !important;
 }
 
 .btn-jupyter:hover {
