@@ -1,13 +1,16 @@
   
 {% extends "templates/page.html" %}
 
+{% block title %}XT Code{% endblock %}
+
 {% block stylesheet %}
 <link rel="stylesheet" href="{{ static_url("css/style.min.css") }}" type="text/css"/>
 <link rel="stylesheet" href="{{ static_url("custom/css/xt-styles.css") }}" type="text/css"/>
+<link rel="icon" href="{{ static_url("custom/favicon.ico") }}" type="image/x-icon">
 {% endblock %}
-{% block favicon %}
+<!-- {% block favicon %}
   <link rel="icon" href="{{ static_url("custom/favicon.ico") }}" type="image/x-icon">
-{% endblock %}
+{% endblock %} -->
 
 {# requires jupyerhub > 0.9.4 https://github.com/jupyterhub/jupyterhub/pull/2296 #}
 {% block logo %}

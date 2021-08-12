@@ -3,7 +3,7 @@
 {% block login %}
 <div id="login-main" class="container xt">
   <div class="row">
-    <div class="col-6">
+    <div class="col-md-6">
       <h1>{{ xt_hub_title or 'Exploration Toolkit EASIHub' }}</h1>
       <h2>{{ xt_hub_subtitle }}</h2>
       <p>
@@ -17,7 +17,7 @@
     </div>
     {% block login_container %}
     {% if login_service %}
-    <div class="service-login col-6">
+    <div class="service-login col-md-6">
       <a role="button" class='btn btn-jupyter btn-lg' href='{{authenticator_login_url}}'>
         XT User Sign In
       </a>
